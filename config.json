@@ -36,11 +36,6 @@
         },
         {
             "type": "file",
-            "source": "./openblas.sh",
-            "destination": "/home/centos/openblas.sh"
-        },
-        {
-            "type": "file",
             "source": "./openmpi.sh",
             "destination": "/home/centos/openmpi.sh"
         },
