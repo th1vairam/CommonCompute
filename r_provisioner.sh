@@ -20,7 +20,7 @@ cd zlib-1.2.8
 make && make install && make clean
 
 export PATH=/usr/local/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/lib:/opt/OpenBLAS/lib:/usr/lib64/openmpi/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib64/openmpi/lib:$LD_LIBRARY_PATH
 export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/lib"
 
@@ -29,10 +29,10 @@ cd /home/centos/src
 wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 tar xzvf bzip2-1.0.6.tar.gz
 cd bzip2-1.0.6
-make -f Makefile-libbz2_so 
+make -f Makefile-libbz2_so
 make install PREFIX=/usr/local
 make clean
- 
+
 # Install xz from source
 cd /home/centos/src
 wget http://tukaani.org/xz/xz-5.2.2.tar.gz
@@ -62,12 +62,12 @@ cd /home/centos/src
 wget https://cran.r-project.org/src/base/R-3/R-3.3.1.tar.gz
 tar xzf R-3.3.1.tar.gz
 cd R-3.3.1
-./configure --with-cairo --with-x --with-jpeglib --with-readline --with-tclk --with-blas  --enable-R-shlib --enable-BLAS-shlib --enable-R-profiling --enable-memory-profiling JAVA_HOME=/usr/lib/jvm/java-openjdk
+./configure --with-cairo --with-x --with-jpeglib --with-readline --with-tclk --enable-R-shlib --enable-R-profiling --enable-memory-profiling JAVA_HOME=/usr/lib/jvm/java-openjdk
 make && make install && make clean
 
 # Link openblas library for R blas
-mv /usr/local/lib64/R/lib/libRblas.so /usr/local/lib64/R/lib/libRblas.so.keep
-ln -s /opt/OpenBLAS/lib/libopenblas.so /usr/local/lib64/R/lib/libRblas.so
+#mv /usr/local/lib64/R/lib/libRblas.so /usr/local/lib64/R/lib/libRblas.so.keep
+#ln -s /opt/OpenBLAS/lib/libopenblas.so /usr/local/lib64/R/lib/libRblas.so
 
 ## Use RStudio CDN as mirror
 ## Set a default CRAN repo
