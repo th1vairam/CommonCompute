@@ -13,9 +13,9 @@ module add openmpi-1.10-x86_64
 
 # Install zlib from source
 cd /home/centos/src
-wget http://zlib.net/zlib-1.2.8.tar.gz
-tar xzvf zlib-1.2.8.tar.gz
-cd zlib-1.2.8
+wget http://zlib.net/zlib-1.2.11.tar.gz
+tar xzvf zlib-1.2.11.tar.gz
+cd zlib-1.2.11
 ./configure --prefix=/usr/local/
 make && make install && make clean
 
