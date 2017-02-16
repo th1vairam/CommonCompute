@@ -43,9 +43,9 @@ make -j3 && make install && make clean
 
 # Install pcre from source
 cd /home/centos/src
-wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz
-tar xzvf pcre-8.38.tar.gz
-cd pcre-8.38
+wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
+tar xzvf pcre-8.39.tar.gz
+cd pcre-8.39
 ./configure --prefix=/usr/local --enable-utf8
 make -j3 && make install && make clean
 
