@@ -10,14 +10,14 @@ Rscript -e 'install.packages(c("RJSONIO", "RCurl", "digest")); source("http://de
 ## Install base bioconductor packages
 Rscript -e 'source("http://www.bioconductor.org/biocLite.R") ; biocLite(c("limma", "biovizBase", "e1071", "org.Hs.eg.db", "edgeR", "AnnotationDbi", "biomaRt", "ComplexHeatmap", "FDb.InfiniumMethylation.hg19", "RDAVIDWebService", "topGO", "goseq", "GO.db", "GSVA", "org.Hs.eg.db", "edgeR", "limma", "CePa", "Biobase", "pracma", "annotate", "BiocInstaller", "Biostrings", "GEOquery", "GOstats", "graph", "GSEABase", "impute", "preprocessCore"))'
 
-## Install rGithub client
+## Install rGithub clientt
 Rscript -e 'library(devtools); install_github("brian-bot/githubr")'
 
 ## Install covariate analysis package from th1vairam
 Rscript -e 'library(devtools); install_github("th1vairam/CovariateAnalysis@dev")'
 
 ## Install metanetwork from blogsdon
-Rscript -e 'library(devtools); install_github("blogsdon/metanetwork")'
+Rscript -e 'library(devtools); install_github("Sage-Bionetworks/metanetwork")'
 
 ## Install Rmpi
 export LD_LIBRARY_PATH=/usr/lib64/openmpi-1.10/lib:$LD_LIBRARY_PATH
